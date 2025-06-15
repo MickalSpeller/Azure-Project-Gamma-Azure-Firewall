@@ -1,4 +1,3 @@
-// hubVnet.bicep
 param location string
 param prefix string
 

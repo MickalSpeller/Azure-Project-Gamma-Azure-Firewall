@@ -1,4 +1,3 @@
-// spokeVnet.bicep
 param location string
 param prefix string
 param addressPrefix string

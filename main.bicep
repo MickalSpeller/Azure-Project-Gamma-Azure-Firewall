@@ -1,4 +1,3 @@
-// main.bicep
 targetScope = 'resourceGroup'
 
 param location string = 'eastus'

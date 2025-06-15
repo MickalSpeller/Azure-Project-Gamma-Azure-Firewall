@@ -1,4 +1,3 @@
-// firewallRules.bicep
 param location string
 param firewallName string
 
