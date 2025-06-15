@@ -34,7 +34,7 @@ This project demonstrates a secure **hub-and-spoke network topology** in Azure w
 
 
 
-## Tools Used
+## Technologies Used
 
 - Azure Bicep (Infrastructure as Code)
 - Azure CLI
@@ -118,7 +118,7 @@ az group delete -n rg-hubspoke-fw --yes --no-wait
 
 ## Acknowledgements
 
-Inspired by real-world architectures and AZ-700 learning paths.
+Inspired by real-world Azure architectures for professinal development and proof of concept
 
 
 
@@ -128,4 +128,4 @@ MIT - [Full Text](https://opensource.org/licenses/MIT)
 ---
 
 ## Author
-Mickal Speller | [LinkedIn](https://linkedin.com/in/mickalspeller) | [GitHub](https://github.com/yourgithub)
+Mickal Speller | [Website](https://mickalspeller) | [GitHub](https://github.com/yourgithub)
