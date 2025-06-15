@@ -1,4 +1,4 @@
-# Secure Hub-and-Spoke Network with Azure Firewall (Azure Project)
+# Secure Hub-and-Spoke Network with Azure Firewall
 
 This project demonstrates a secure **hub-and-spoke network topology** in Azure with a centrally managed **Azure Firewall** used to inspect and control traffic. It is designed to reinforce key concepts with Azure Firewalls and cloud security.
 
@@ -105,7 +105,7 @@ az group delete -n rg-hubspoke-fw --yes --no-wait
 
 
 
-## AZ-700 Objectives Covered
+## Objectives Covered
 
 | Area | Objective |
 |------|-----------|
