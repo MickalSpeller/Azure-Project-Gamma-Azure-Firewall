@@ -1,15 +1,18 @@
 # Secure Hub-and-Spoke Network with Azure Firewall (Azure Project)
 
-This project demonstrates a secure hub-and-spoke network topologyin Azure with a centrally managed **Azure Firewall** used to inspect and control traffic. 
+This project demonstrates a secure **hub-and-spoke network topology** in Azure with a centrally managed **Azure Firewall** used to inspect and control traffic. It is designed to reinforce key concepts from the **AZ-700: Designing and Implementing Microsoft Azure Networking Solutions** certification.
+
+
 
 ## Project Overview
 
-- Hub VNet hosting Azure Firewall
-- Two Spoke VNets hosting VMs
-- Peering between hub and spokes
-- User-Defined Routes (UDRs) sending all traffic from spokes to the firewall
-- Azure Firewall for inspecting and controlling egress and ingress
-- Network Security Groups (NSGs) for subnet-level control
+- **Hub VNet** hosting Azure Firewall
+- **Two Spoke VNets** hosting VMs
+- **Peering** between hub and spokes
+- **User-Defined Routes (UDRs)** sending all traffic from spokes to the firewall
+- **Azure Firewall** for inspecting and controlling egress and ingress
+- **Network Security Groups (NSGs)** for subnet-level control
+
 
 
 ## Architecture Diagram (Logical)
@@ -30,12 +33,14 @@ This project demonstrates a secure hub-and-spoke network topologyin Azure with a
 ```
 
 
+
 ## Tools Used
 
 - Azure Bicep (Infrastructure as Code)
 - Azure CLI
 - Azure Firewall Basic SKU
 - B1s VMs for minimal cost
+
 
 
 ## Folder Structure
@@ -49,6 +54,7 @@ This project demonstrates a secure hub-and-spoke network topologyin Azure with a
 ├── variables.bicep         # Common variables and parameters
 └── README.md               # Project documentation
 ```
+
 
 
 ## Deployment Instructions
@@ -70,10 +76,12 @@ az deployment group create \
 > NOTE: You can also use GitHub Actions for CI/CD automation of this deployment.
 
 
+
 ## Outputs
 - Public IP of Azure Firewall
 - Private IPs of VM1 and VM2
 - Confirmed VM traffic must pass through Azure Firewall (SNAT rule)
+
 
 
 ## Validation Steps
@@ -81,6 +89,7 @@ az deployment group create \
 1. SSH into VM1 in Spoke1
 2. Curl an external endpoint (e.g., `curl https://microsoft.com`)
 3. Check Azure Firewall logs in Diagnostic Settings or Network Watcher
+
 
 
 ## Cost Notes
@@ -95,6 +104,7 @@ az group delete -n rg-hubspoke-fw --yes --no-wait
 ```
 
 
+
 ## AZ-700 Objectives Covered
 
 | Area | Objective |
@@ -105,14 +115,17 @@ az group delete -n rg-hubspoke-fw --yes --no-wait
 | Monitor and troubleshoot | ✔ Diagnostic logs for Firewall |
 
 
+
 ## Acknowledgements
 
-Inspired by real-world architectures for practical and professional development.
+Inspired by real-world architectures and AZ-700 learning paths.
+
 
 
 ## License
 MIT - [Full Text](https://opensource.org/licenses/MIT)
 
+---
 
 ## Author
-Mickal Speller | [Website](https:www.mickalspeller.com) | [GitHub](https://github.com/yourgithub)
+Mickal Speller | [LinkedIn](https://linkedin.com/in/mickalspeller) | [GitHub](https://github.com/yourgithub)
