@@ -1,6 +1,6 @@
 # Secure Hub-and-Spoke Network with Azure Firewall (Azure Project)
 
-This project demonstrates a secure **hub-and-spoke network topology** in Azure with a centrally managed **Azure Firewall** used to inspect and control traffic. It is designed to reinforce key concepts from the **AZ-700: Designing and Implementing Microsoft Azure Networking Solutions** certification.
+This project demonstrates a secure **hub-and-spoke network topology** in Azure with a centrally managed **Azure Firewall** used to inspect and control traffic. It is designed to reinforce key concepts with Azure Firewalls and cloud security.
 
 
 
